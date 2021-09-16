@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    app:cardCornerRadius="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/ic_item_kategori"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_si" />
+
+        <TextView
+            android:id="@+id/tv_item_kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/ic_item_kategori"
+            android:textSize="11dp"
+            android:text="Kategori"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ic_item_kategori" />
+
+        <TextView
+            android:id="@+id/tv_item_bersertifikat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/tv_item_kategori"
+            android:textSize="11dp"
+            android:textColor="#bfbfbf"
+            android:text="Bersertifikat"
+            android:layout_toRightOf="@+id/tv_item_kategori" />
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_below="@+id/tv_item_kategori"
+            android:id="@+id/img_item_photo"
+            android:src="@drawable/logo_gits"
+            android:maxHeight="100px"
+            android:maxWidth="100px"/>
+
+        <TextView
+            android:id="@+id/tv_item_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img_item_photo"
+            android:layout_below="@id/tv_item_kategori"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Nama program"
+            android:layout_toRightOf="@+id/img_item_photo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_deskripsi"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tv_item_nama"
+            android:layout_toEndOf="@+id/img_item_photo"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="Deskripsi"
+            android:layout_toRightOf="@+id/img_item_photo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_kotaperusahaan"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/tv_item_deskripsi"
+            android:layout_toEndOf="@+id/img_item_photo"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="#bfbfbf"
+            android:text="Kota Perusahaan"
+            android:layout_toRightOf="@+id/img_item_photo" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
