@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_bg_all"
+    tools:context=".DetailProgramMSIB">
+    <include layout="@layout/toolbar_detail_program"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:orientation="vertical"
+        android:background="@color/white_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamu tidak mengambil penawaran ini"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamu telah memilih untuk mengambil tawaran dari kegiatan lain dan/atau tawaran ini sudah tidak berlaku."
+            android:textSize="12dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="18dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informasi Kegiatan"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@drawable/ic_bg"
+            android:id="@+id/img_item_photo"
+            android:src="@drawable/logo_gits"
+            android:maxHeight="100px"
+            android:maxWidth="100px"/>
+        <TextView
+            android:id="@+id/tv_item_nama"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informasi Kegiatan"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/tv_item_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kamu telah memilih untuk mengambil tawaran dari kegiatan lain dan/atau tawaran ini sudah tidak berlaku."
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="3dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_item_namaperusahaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gits.id"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="di"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"/>
+            <TextView
+                android:id="@+id/tv_item_kotaperusahaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gits.id"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Akan mendapat 20 SKS"
+            android:textSize="12dp"
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_hr"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ic_sertifikat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bersertifikat"/>
+            <TextView
+                android:id="@+id/tv_sertifikat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_sertifikat"
+                android:text="Kegiatan ini Bersertifikat"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_sertifikat"
+                android:layout_below="@+id/tv_sertifikat"
+                android:text="Konversi SKS dan kualitas kegiatan dijamin oleh tim Kemendikbudristek"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/ic_sistemkerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_connect_without_contact_24"
+                android:backgroundTint="@color/black"/>
+            <TextView
+                android:id="@+id/tv_sistemkerja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_sistemkerja"
+                android:text="Pekerjaan ini Remote"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sistemkerja"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ic_sistemkerja"
+                android:text="Kamu tidak perlu datang ke kantor— bekerja bisa dari manapun"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_hr"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Periode Kegiatan"
+            android:textSize="10dp"
+            android:textColor="@color/grey_light"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Agu 2021 - 31 Desember 2021"
+            android:textSize="10dp"
+            android:textColor="@color/black"/>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_hr"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="fill_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rincian Kegiatan"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="right"
+                android:textSize="16dp"/>
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_down"
+                android:backgroundTint="@color/black"
+                android:layout_gravity="right"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_hr"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="fill_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tentang Perusahaan"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="right"
+                android:textSize="16dp"/>
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow_down"
+                android:backgroundTint="@color/black"
+                android:layout_gravity="right"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -2,6 +2,7 @@ package id.gits.si.tugas12
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -18,6 +19,11 @@ class MainActivity : AppCompatActivity() {
 
         list.addAll(DataMSIB.listData)
         showRecyclerView()
+
+        val back = findViewById<ImageView>(R.id.left_icon)
+        back.setOnClickListener() {
+            super.onBackPressed()
+        }
     }
 
     private fun showRecyclerView() {

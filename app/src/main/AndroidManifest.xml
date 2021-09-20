@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tugas12">
         <activity
+            android:name=".DetailProgramMSIB"
+            android:exported="true"
+            android:label="@string/title_activity_detail_program_msib"
+            android:theme="@style/Theme.Tugas12.NoActionBar" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.Tugas12.WhiteStatusBar">

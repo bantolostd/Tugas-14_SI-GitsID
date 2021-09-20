@@ -1,5 +1,6 @@
 package id.gits.si.tugas12
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,7 +37,16 @@ class ProgramMSIBAdapter(private val listProgram: ArrayList<ProgramMSIB>):
         holder.tvKategori.text = program.kategoriProgram
 
         holder.itemView.setOnClickListener {
-            Toast.makeText(holder.itemView.context, "Kamu memilih "+listProgram[holder.adapterPosition].namaProgram, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(holder.itemView.context, "Kamu memilih "+listProgram[holder.adapterPosition].namaProgram, Toast.LENGTH_SHORT).show()
+            val intent = Intent(holder.itemView.context, DetailProgramMSIB::class.java)
+            intent.putExtra("tvNama", program.namaProgram)
+            intent.putExtra("tvPerusahaan", program.namaPerusahaan)
+            intent.putExtra("tvDeskripsi", program.deskripsiProgram)
+            intent.putExtra("tvKota", program.kotaPerusahaan)
+            intent.putExtra("tvKategori", program.kategoriProgram)
+            intent.putExtra("ivIconPerusahaan", program.photo)
+            holder.itemView.context.startActivities(arrayOf(intent))
+
         }
     }
 
